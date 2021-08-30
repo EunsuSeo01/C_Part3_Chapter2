@@ -3,6 +3,7 @@
  last modified 2021-08-30
 */
 #include <stdio.h>
+#include <stdlib.h>		// atoi()함수에 여기에 들어있음.
 int main(void) {
 	// 정수 형태의 문자열을 입력받아 정수로 바꾸는 프로그램.
 	char input[100];
