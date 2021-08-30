@@ -14,8 +14,12 @@ int main(void) {
 	int size = strlen(input);
 
 	for (int i = 0; i < size; i++) {
-		inputCopy[size - 1] = input[i];
+		inputCopy[size - 1 - i] = input[i];
 	}
+	inputCopy[size] = '\0';
+
+	printf("원래 문자열: %s \n", input);
+	printf("앞뒤 바뀐 문자열: %s \n", inputCopy);
 
 	return 0;
 }
